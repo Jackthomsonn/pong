@@ -24,7 +24,8 @@ module.exports = {
       { from: 'src/app' }
     ], {
         ignore: [
-          '*.js'
+          '*.js',
+          '*.scss'
         ]
       })
   ],
