@@ -2,8 +2,7 @@ import { Config } from './config'
 
 export class Ball {
   constructor(x, y) {
-    this.size = 15
-    this.radius = 10
+    this.size = 10
     this.x = x
     this.y = y
     this.dx = 5
@@ -18,12 +17,12 @@ export class Ball {
   }
 
   move() {
-    if (this.x + this.dx > 500 || this.x + this.dx < this.radius) {
+    if (this.x + this.dx > 500 || this.x + this.dx < this.size) {
       this.dx = -this.dx
     }
     if (
-      this.y + this.dy > 500 - this.radius ||
-      this.y + this.dy < this.radius
+      this.y + this.dy > 500 - this.size ||
+      this.y + this.dy < this.size
     ) {
       this.dy = -this.dy
     }
