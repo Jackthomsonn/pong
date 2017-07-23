@@ -17,11 +17,11 @@ export class Ball {
   }
 
   move() {
-    if (this.x + this.dx > 500 || this.x + this.dx < this.size) {
+    if (this.x + this.dx > Config.canvasSize || this.x + this.dx < this.size) {
       this.dx = -this.dx
     }
     if (
-      this.y + this.dy > 500 - this.size ||
+      this.y + this.dy > Config.canvasSize - this.size ||
       this.y + this.dy < this.size
     ) {
       this.dy = -this.dy

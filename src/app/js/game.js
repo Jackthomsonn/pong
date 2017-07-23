@@ -21,7 +21,7 @@ class Game {
   }
 
   update() {
-    Config.ctx.clearRect(0, 0, 500, 500)
+    Config.ctx.clearRect(0, 0, Config.canvasSize, Config.canvasSize)
 
     this.player1.draw()
     this.player2.draw()
